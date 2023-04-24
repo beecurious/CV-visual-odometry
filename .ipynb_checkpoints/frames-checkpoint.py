@@ -14,12 +14,12 @@ class DatasetHandler:
 
     def __init__(self):
         # Define number of frames
-        self.num_frames = 52
+        self.num_frames = 20
 
         # Set up paths
         root_dir_path = os.path.dirname(os.path.realpath(__file__))
-        self.image_dir = os.path.join(root_dir_path, 'data/rgb')
-        self.depth_dir = os.path.join(root_dir_path, 'data/depth')
+        self.image_dir = os.path.join(root_dir_path, 'image')
+        self.depth_dir = os.path.join(root_dir_path, 'depth')
 
         # Set up data holders
         self.images = []
